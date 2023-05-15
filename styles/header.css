@@ -1,0 +1,22 @@
+
+.header{
+    height: 80px;
+    border-bottom: 2px black solid;
+}
+.img-logo_header{
+    /* display: none; */
+    height: 60px;
+    width: 60px;
+}
+.img-menu_header{
+    display: none;
+    height: 50px;
+    width: 50px;
+}
+.elem-menu{
+    margin: 0;
+    padding: 0;
+}
+.header img:nth-child(2){
+        display: block!important;
+    }

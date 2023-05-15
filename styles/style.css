@@ -1,0 +1,47 @@
+@import url(./bootstrap.min.css);
+@import url(./normalise.css);    
+@import url(./header.css);
+@import url(./main.css);
+@import url(./footer.css);
+@import url(./fontello.css);
+
+
+
+@media(max-width: 900px){
+    .descr-text{
+        display: none;
+    }
+    .features_ul{
+        display: none;
+    }
+    .accordion{
+        display: block!important;
+    }
+    .header img:nth-child(1){
+        display: block!important;
+    }
+    .header img:nth-child(2){
+        display: none!important;
+    }
+
+}
+.ml-5{
+    margin-left: 5rem;
+}
+body{
+    background: rgb(170,170,170);
+    background: linear-gradient(0deg, rgba(170,170,170,1) 0%, rgba(255,255,255,1) 5%, rgba(255,244,244,1) 95%, rgba(177,177,177,1) 100%);
+}
+.form-registr{
+    display: none;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.cross-registr{
+    text-align: end;
+    margin-top: -30px;
+}

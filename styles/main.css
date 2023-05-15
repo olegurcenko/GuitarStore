@@ -1,0 +1,209 @@
+.title-main{
+    background: #778866;
+    padding-top: 20px;
+    font-size: 50px;
+    color: aliceblue;
+    -webkit-text-stroke: 1.5px rgb(0, 0, 0);
+    padding-bottom: 35px;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(119,136,102,1) 15%, rgba(119,136,102,1) 85%, rgba(222,215,215,1) 100%);
+    /* width: fit-content; */
+    /* padding-inline: 25px; */
+}
+.guitar-show{
+    height: auto!important;
+    position: absolute;
+    /* left: -300px; */
+    width: 300px!important;
+    padding: 50px;
+    padding-top: 50px;
+    overflow: hidden;
+
+
+}
+.text-bg{
+    overflow: hidden;
+    width: 300px!important;
+    height: 650px!important;
+    font-size: 24px;
+    margin: auto;
+    height: auto;
+    /* background-color: #786; */
+}
+@keyframes fade-down{
+    from{
+        transform: translateY(-80px);
+    }
+    
+    to{
+        transform: translateY(0px);
+    }
+}
+.running-down-text{
+    text-align: center;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    animation: fade-down 2s infinite linear;
+}
+.description{
+    font-size: 20px;
+    text-align: justify;
+}
+#accord_descr{
+    display: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #786;
+    color: aliceblue;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+}
+.accordion-button::after{
+    background-image: url(../images/down.png);
+}
+.accordion-button{
+    background-color: rgba(119, 136, 102, 0.547);
+    border: black;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../images/down.png);
+    color: aliceblue;
+    transform: rotate(-180deg);
+}
+.features_ul{
+    font-size: 40px;
+}
+.features-text_li{
+    text-align: justify;
+    font-size: 25px;
+    list-style-type: square;
+    padding-block: 10px;
+}
+.features-text_p{
+    /* box-shadow: 0px 0px 12px 12px rgba(155,170,145,1); */
+
+    text-align: justify;
+    font-size: 25px;
+    padding-block: 10px;
+    border-bottom: #786 2px solid;
+    /* background-color: #9baa91; */
+}
+
+.features-text_p::before{
+    content: '';
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 8px;
+    width: 5px;
+    height: 5px;
+    background: #000;
+}
+.line{
+    background: #000;
+    width: 100%;
+    height: 2px;
+}
+.fl_dir_col{
+    flex-direction: column;
+}
+#accordion_feature{
+    display: none;
+}
+@media (max-width: 800px){
+    .video iframe{
+        height: 300px!important;
+    }
+    .img-carousel{
+        height: 400px!important;
+        width: 300px!important;
+    }
+    .carousel-caption .font-with-borders{
+        font-size: 16px;
+        padding: 5px;
+        margin: 3px,auto;
+    }
+}
+.video iframe{
+    width: 740px!important;
+    height: 400px;
+}
+.title-highlights_li{
+    height: 60px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.line-1px{
+    height: 0.5px;
+    margin: auto;
+    width: 65%;
+    background-color: #827f7f;
+}
+.highlights_p{
+    width: 60%;
+    text-align: left;
+}
+.border-for-img{
+    border: 1px solid black;
+}
+/* menu */
+.menu{
+    display: none;
+    position: fixed;
+    backdrop-filter: blur(3px) grayscale(100%);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000044;
+}
+.menu-elem{
+    height: 10vh;
+    font-size: 45px;
+}
+.menu-elem a{
+    color: aliceblue;
+    font-weight: 900;
+    -webkit-text-stroke: 0.5px rgb(0, 0, 0);
+}
+.menu-elem:first-child{
+    margin-top: 10vh;
+}
+.ul-menu_text{
+    font-size: 50px;
+    color: aliceblue;
+    font-weight: 900;
+    -webkit-text-stroke: 0.5px rgb(0, 0, 0);
+}
+.exit-menu a{
+    color: aliceblue!important;
+}
+/* menu */
+/* .video{
+    background-image: url(../images/music-note-on-the-white-background.png);
+    background-position-x: end;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(2px);
+} */
+.font-with-borders{
+    /* -webkit-text-stroke: 0.5px rgb(0, 0, 0); */
+    /* font-size: 35px; */
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #00000092;
+    width: fit-content;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon
+{
+    /* border: 1px solid black;     */
+    background-color: #00000092;
+    border-radius: 6px;
+}
+.img-carousel{
+    height: 400px;
+    width: 600px;
+    object-fit: contain;
+    margin: auto;
+}
